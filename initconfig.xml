@@ -1,0 +1,21 @@
+<users>
+	<user>
+		<login>admin</login>
+		<pwd>p@ssw0rd</pwd>
+		<home_dir>path_to_home_dir</home_dir>
+	</user>
+<users>
+<network>
+	<ip_addr>127.0.0.1</ip_addr>
+	<netmask>255.255.255.0</netmask>
+	<gateway>
+</network>
+<repos>
+	<repo></repo>
+	<repo></repo>
+	<repo></repo>
+</repos>
+<software>
+	<app></app>
+	<app></app>
+</software>
