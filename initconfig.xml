@@ -3,19 +3,36 @@
 		<login>admin</login>
 		<pwd>p@ssw0rd</pwd>
 		<home_dir>path_to_home_dir</home_dir>
+		<base_dir>path_to_base_dir</base_dir>
+		<expire>YYYY-MM-DD</expire>
+		<group>group</group>
+		<sudo>sudo</sudo> //boolean
+		<shell>shell</shell>
 	</user>
 <users>
 <network>
 	<ip_addr>127.0.0.1</ip_addr>
 	<netmask>255.255.255.0</netmask>
-	<gateway>
+	<gateway></gateway>
 </network>
 <repos>
-	<repo></repo>
-	<repo></repo>
-	<repo></repo>
+	<repo>
+		<action>add|delete</action>
+		<url>repo_url</url>
+	</repo>
 </repos>
 <software>
-	<app></app>
-	<app></app>
+	<app>
+		<action>install|remove</action>
+		<with_dependencies>yes|no</with_dependencies>
+		<package>pckg_name</package>
+	</app>
 </software>
+<config_files>
+	<conf_file>
+		<app>app_name</app> //if we know this app, then we don't need to enter config file dst location
+		<action>merge|replace</action>
+		<src>path_to_src_file</src>
+		<dst>path_to_dst_file</dst>
+	</conf_file>
+</config_files>
